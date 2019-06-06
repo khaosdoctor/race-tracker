@@ -6,16 +6,13 @@
   "bin": {
     "race": "./src/index.js"
   },
-  "directories": {
-    "test": "test",
-    "start": "node src/index.js"
-  },
   "engines": {
     "node": ">10",
     "npm": ">6"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +28,7 @@
   "dependencies": {
     "is-invalid-path": "^1.0.2",
     "lodash.groupby": "^4.6.0",
+    "lodash.sortby": "^4.7.0",
     "moment": "^2.24.0"
   }
 }
