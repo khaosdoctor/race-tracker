@@ -1,0 +1,36 @@
+{
+  "name": "race-tracker",
+  "version": "1.0.0",
+  "description": "Race problem",
+  "main": "src/index.js",
+  "bin": {
+    "race": "./src/index.js"
+  },
+  "directories": {
+    "test": "test",
+    "start": "node src/index.js"
+  },
+  "engines": {
+    "node": ">10",
+    "npm": ">6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaosdoctor/race-tracker.git"
+  },
+  "keywords": [],
+  "author": "Lucas Santos <hello@lsantos.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khaosdoctor/race-tracker/issues"
+  },
+  "homepage": "https://github.com/khaosdoctor/race-tracker#readme",
+  "dependencies": {
+    "is-invalid-path": "^1.0.2",
+    "lodash.groupby": "^4.6.0",
+    "moment": "^2.24.0"
+  }
+}
