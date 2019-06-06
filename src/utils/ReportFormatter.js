@@ -7,13 +7,14 @@ function getPodiumReport (totalReport) {
     'Tempo total de prova': line.totalRacingTime,
     'Melhor volta': `${line.bestLap.lap} - ${line.bestLap.lapTime.format('mm:ss.SSS')}`,
     'Velocidade Média': line.avgSpeed.toFixed(3),
-    'Tempo após o vencedor': line.timeFromWinner
+    'Tempo após o vencedor': line.timeFromWinner,
+    'Terminou a corrida?': line.hasFinished ? 'SIM' : 'NÃO'
   }))
 }
 
 function getRaceReport (totalReport) {
   return {
-    'Melhor Volta': {
+    'Melhor Volta da corrida': {
       Volta: totalReport.raceData.bestLap.lap,
       'Código Piloto': totalReport.raceData.bestLap.id,
       Piloto: totalReport.raceData.bestLap.racerName,

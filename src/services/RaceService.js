@@ -16,7 +16,7 @@ class RaceService {
     return this._raceParsedData
   }
 
-  generateReport () {
+  generateReport (maxLaps = 4) {
     const podium = this._getPodium()
     const winner = podium[0]
     const bestLap = this._getBestLap()
@@ -24,7 +24,7 @@ class RaceService {
       raceData: {
         bestLap: { lap: bestLap.lap, racerName: bestLap.racerName, id: bestLap.racerId, lapTime: bestLap.lapTime.format('mm:ss.SSS') }
       },
-      podiumData: podium.map((racer) => ({ ...racer, timeFromWinner: moment(this._getTimeFromWinner(racer.lastLap.time, winner.lastLap.time)).format('mm:ss.SSS') }))
+      podiumData: podium.map((racer) => ({ ...racer, timeFromWinner: moment(this._getTimeFromWinner(racer.lastLap.time, winner.lastLap.time)).format('mm:ss.SSS'), hasFinished: racer.completedLaps >= maxLaps }))
     }
   }
 
