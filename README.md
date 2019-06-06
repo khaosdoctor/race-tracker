@@ -1,3 +1,7 @@
+# Race tracker
+
+> Dados e informações [aqui](./RUNNING.md)
+
 PROBLEMA
 ========
 Dado o seguinte log de uma corrida de Kart:
