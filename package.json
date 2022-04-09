@@ -47,7 +47,7 @@
     "is-invalid-path": "^1.0.2",
     "lodash.groupby": "^4.6.0",
     "lodash.sortby": "^4.7.0",
-    "moment": "^2.24.0"
+    "moment": "^2.29.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",
